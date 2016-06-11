@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.key {
+  color: blue;
+}
+
+.test {
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+.desc {
+  text-decoration: underline;
+}
+
+.results-out p, .trace-out p {
+  margin: 3px;
+}
+
+.results-out, .trace-out {
+  margin-left: 25px;
+  color: greenyellow;
+  background: black;
+  padding: 1px 10px;
+  display: inline-block;
+}

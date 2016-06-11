@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  select
+    each file, key in files
+      option(value=file.name) #{file.name}
+
+  h3 Output
+  p.output 
+
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js')
+  script(src='/javascripts/main.js')
