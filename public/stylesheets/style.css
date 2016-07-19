@@ -16,12 +16,21 @@ a {
   border-top: 1px solid gray;
 }
 
+.test.fail {
+  background: rgba(255,0,0,0.4);
+}
+
 .desc {
   text-decoration: underline;
 }
 
 .results-out p, .trace-out p {
   margin: 3px;
+}
+
+.stat {
+  color: red;
+  padding: 2px;
 }
 
 .results-out, .trace-out {

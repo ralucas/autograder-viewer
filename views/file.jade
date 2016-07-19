@@ -1,0 +1,29 @@
+extends dir
+
+h3 Title: #{json.name}
+p.date Date: #{new Date(json.date)}
+h5 Character count: #{json.charCount}
+p File Stats:
+ul
+  each stat, key in json.stats
+    li= key
+      span.stat
+        code= stat
+each test, key in json.tests
+  div.test(class= test.output.passfail == 'failed' ? 'fail' : undefined)
+    h4.desc= test.description
+    p.trace Traceback:
+      div.trace-out
+      each traceback in test.traceback
+        p
+          code= traceback
+    h5 Results:
+    ul
+      each output, key in test.output
+        li
+          span.key= key + ' : '
+          div.results-out
+            each o in output
+              p
+                code= o
+            

@@ -3,14 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  select
+    each file, key in files
+      option(value=file.name) #{file.name}
+  button.reset Reset
+  button.show Show
 
-  a(href="/pr1/gflib") GF Lib
-  br
-  a(href="/pr1/mtgf") MT GF
-  br
-  a(href="/pr3") Proxy 
-  br
-  a(href="/pr4") RPC
+  h3 Output
+  p.output 
 
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.js')
