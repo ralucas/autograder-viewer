@@ -29,6 +29,10 @@ $(function() {
      '<% }); %>');
      return compiled({json: json});
   }
+  $('input[type="file"]').on('change', function(e) {
+    var dir = e.target.files[0].webkitRelativePath.split("/").shift();
+    $.post('/basedir', {basedir: dir});
+  });
 
   $('select').on('change', function() {
     var file = $(this).val();

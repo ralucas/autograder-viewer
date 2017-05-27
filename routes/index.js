@@ -3,7 +3,7 @@ var router = express.Router();
 var fs = require('fs');
 var _ = require('lodash');
 
-const BASE_DIR = '/Users/richardlucas/gatech_class_material/cs8803/';
+const BASE_DIR = '/Users/richardlucas/gatech_class_material/cse6220/oms-hpc-labs/';
 
 function getFiles(dir, type) {
   var typeRe = new RegExp(type);
